@@ -1,5 +1,20 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function reverse(wrd) {
+  let rev_wrd = "";
+  for (let i = wrd.length-1 ; i>=0; i--) {
+    
+    rev_wrd+=wrd[i];
+
+  }
+  return rev_wrd
+}
+function isPalindrome(wrd) {
+  reverse_wrd = reverse(wrd);
+  if (reverse_wrd === wrd) {
+    return true;
+  } else {
+    return false;
+  }
+  
 }
 
 /* 
